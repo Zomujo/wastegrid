@@ -12,8 +12,8 @@ export default function GlobalAgendas() {
           Goals (SDGs), particularly those related to sustainable cities and
           communities, responsible consumption and production, and climate
           action. We are also aligned with the objectives of the Paris Agreement
-          and Africa's Agenda 2063, supporting the continent's transition to a
-          green and inclusive economy.
+          and Africa&apos;s Agenda 2063, supporting the continent&apos;s
+          transition to a green and inclusive economy.
         </p>
         <div className="mt-10 flex items-center justify-center">
           <Link

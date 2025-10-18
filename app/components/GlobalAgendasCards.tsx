@@ -44,7 +44,7 @@ export default function GlobalAgendasCards() {
             }}
           />
           <div className="p-6">
-            <h3 className="text-xl font-bold">Africa's Agenda 2063</h3>
+            <h3 className="text-xl font-bold">Africa&apos;s Agenda 2063</h3>
             <p className="mt-2 text-gray-700 dark:text-gray-300">
               Aligning with inclusive growth and environmental sustainability.
             </p>

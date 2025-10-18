@@ -5,11 +5,11 @@ export default function NetworkWhyMatters() {
         Why It Matters
       </h2>
       <p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
-        By empowering informal waste workers, we're not just creating economic
-        opportunities; we're building a more sustainable and equitable future
-        for Africa. Our network of certified Environmental Partners is at the
-        forefront of the circular economy, driving positive change for
-        communities and the environment.
+        By empowering informal waste workers, we&apos;re not just creating
+        economic opportunities; we&apos;re building a more sustainable and
+        equitable future for Africa. Our network of certified Environmental
+        Partners is at the forefront of the circular economy, driving positive
+        change for communities and the environment.
       </p>
     </section>
   );

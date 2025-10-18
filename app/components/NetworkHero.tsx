@@ -2,7 +2,7 @@ export default function NetworkHero() {
   return (
     <section className="text-center mb-20">
       <h1 className="text-4xl md:text-6xl font-bold mb-4 text-slate-900 dark:text-white">
-        From Informal Work to Africa's{" "}
+        From Informal Work to Africa&apos;s{" "}
         <span className="gradient-text">Green Gig Economy.</span>
       </h1>
       <p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">

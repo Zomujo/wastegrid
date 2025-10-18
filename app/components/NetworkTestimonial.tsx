@@ -10,14 +10,14 @@ export default function NetworkTestimonial() {
             Environmental Partner
           </p>
           <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">
-            "Transforming My Life and Community"
+            &ldquo;Transforming My Life and Community&rdquo;
           </h3>
           <blockquote className="italic text-slate-600 dark:text-slate-400">
-            "I used to struggle with inconsistent income and lack of
+            &ldquo;I used to struggle with inconsistent income and lack of
             recognition. Waste Grid has given me the opportunity to earn more,
-            learn new skills, and be part of something bigger. I'm proud to be
-            an Environmental Partner and contribute to a cleaner, greener future
-            for my community."
+            learn new skills, and be part of something bigger. I&apos;m proud to
+            be an Environmental Partner and contribute to a cleaner, greener
+            future for my community.&rdquo;
           </blockquote>
         </div>
         <div
