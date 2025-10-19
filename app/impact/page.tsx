@@ -8,15 +8,19 @@ import InvestCTA from "../components/InvestCTA";
 
 export default function ImpactPage() {
   return (
-    <div className="relative min-h-screen w-full overflow-x-hidden">
+    <div className="relative flex min-h-screen w-full flex-col">
       <ImpactHeader />
-      <main className="container mx-auto px-6 py-16 sm:py-24">
-        <ImpactHero />
-        <ImpactMetrics />
-        <GlobalAgendasCards />
-        <RevenueStreams />
-        <WhyModelWorks />
-        <InvestCTA />
+      <main className="flex flex-1 justify-center py-16 sm:py-20 md:py-24">
+        <div className="w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col gap-16 md:gap-24">
+            <ImpactHero />
+            <ImpactMetrics />
+            <GlobalAgendasCards />
+            <RevenueStreams />
+            <WhyModelWorks />
+            <InvestCTA />
+          </div>
+        </div>
       </main>
     </div>
   );

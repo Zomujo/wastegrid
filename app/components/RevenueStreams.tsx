@@ -1,68 +1,79 @@
 export default function RevenueStreams() {
   return (
-    <section className="mt-20 sm:mt-32">
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
-        The Four Revenue Streams
+    <section className="mt-16">
+      <h2 className="mb-12 text-center text-4xl font-bold tracking-tight">
+        Our Four Revenue Streams
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div className="bg-white/5 dark:bg-black/10 rounded-xl overflow-hidden group">
-          <div
-            className="h-48 bg-cover bg-center"
-            style={{
-              backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuBs491kNiy3IuezP6g4KNAs6JkiOgK68SrMZuTydbbSHWV0hhbYOh4wngjG0oa629pnNZskT1O0MURjxTFVRwdWAhKOYSmvc_u2unUR8jy0v_YdRK1J1uXfVkhSPW9_BUKYrZ_LdbIyazBNrX7Kq6BSFV6aIR-1hHS1M3Itff9276L8bVK57LVtXouSnWebdMNakUyI6TmsAy0mRxdxcJjYk6NfcPkYkiqlWMbCRzc2mo5iWUDFWIn4dKpga0ds52XHq1lMaOpZow")`,
-            }}
-          />
-          <div className="p-6">
-            <h3 className="text-lg font-bold">Direct Customer Subscriptions</h3>
-            <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
-              Recurring revenue from waste collection services.
-            </p>
+      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="group flex flex-col overflow-hidden rounded-xl bg-white shadow-lg transition-all hover:scale-105 hover:shadow-2xl dark:bg-gray-800">
+          <div className="aspect-video w-full overflow-hidden">
+            <div
+              className="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+              style={{
+                backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuDgBpp6aUhqmhNFYOIpTKzTfWCn95UG0S7OaGWar324LDKX7c0fYdCWL_Q8zwB_hdfx0Bj1DVduZ6q-nOZdQwnjUWq3hq0k_uK2BmUyN-zI1qKVsEfEkX9KnVJxKAJc2tumBEEBvhLzHvozdElqHQ6R16GBl_5Q5jFCoXKmzsrkLfZUzHtUv4SpFz2VxaudTbGyslRdYyBYDo6yDoJyiKWw_n6tHqbZjbUcb9TK-3teGFzdLJ30MJ_f-YbjMGiYH5oBRvOEjrQ8DKs")`,
+              }}
+            ></div>
           </div>
-        </div>
-
-        <div className="bg-white/5 dark:bg-black/10 rounded-xl overflow-hidden group">
-          <div
-            className="h-48 bg-cover bg-center"
-            style={{
-              backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZ_WSn4z4t27vaxFVlbAF-HciI7wB6cRFOHfbhfsZ9iYF30jKu7nepUFsvn5SDwTWfa-4lpEX6xBhG7VkXe5DkhHhlnXOXOynS4hwGLCoogrNrI_V9CiUf0IGVByRlFftiY7bXAtPuilna9a6DX5EkTR2TRE26-CrpkieZf3PT9qUFkBt0vivkum4eEGzKRfZGDRj5FP_5ETpjr58RVOepvPJaApiZDsJjkfFlSVYxOudeKGz9VaJDTu7kl9ca9Et7Si8H5Cknhw")`,
-            }}
-          />
-          <div className="p-6">
-            <h3 className="text-lg font-bold">Resource Recovery</h3>
-            <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
-              Income from selling recovered materials.
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-white/5 dark:bg-black/10 rounded-xl overflow-hidden group">
-          <div
-            className="h-48 bg-cover bg-center"
-            style={{
-              backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuCFMDk9stx1SwtMX4jwCht7oWbhTzyzYR_-XneJFvlDOiUVGKurBugP7b7-rPOOnB43bVtu4ytFQKe85fQrBrAKBUY08oM6_2nUs5eRZ4qb77nsWUiWU7WvJwJQ-nRktF0NvBJQ0X0f7orckAd9Y9kVolUv1FjfisMLjY5zCvAfxMBWPuqG99Amzxrq1JrPqH15UHRFvQsvMnOdDB-GB3CRMroHobY-xTlnuIhnfXRo8-tqDWaxHm-TCpCZ8K4qJF5651ZmndcHRQ")`,
-            }}
-          />
-          <div className="p-6">
-            <h3 className="text-lg font-bold">ESG & Data Services</h3>
-            <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
-              Providing ESG data and consulting.
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-white/5 dark:bg-black/10 rounded-xl overflow-hidden group">
-          <div
-            className="h-48 bg-cover bg-center"
-            style={{
-              backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfSw-KS9Vzb0eub9Q_BJC_6VwmqHAAq0q3vhZkJFwIQjOnvzg54_1bZg4YwS1T_rkh-SpFaDh_WWpYbberYpA6FH6BNqCbgfEw5xEttd9VOiGzqWysvRmtgbhuLB-gv3_NNrAmS6sVFRTJ5k3_YpGh4FjKiNB6diCLcETqWl_puJoqgXPYssYlstwzFzifMHm_rCIdrw890de-B_GpbKuz3LCukgM4nlk4Ui7cqXIEIY9fEHDO41qqks5Ock9ItR3OJRo5YEjthw")`,
-            }}
-          />
-          <div className="p-6">
-            <h3 className="text-lg font-bold">
-              Climate Finance & Carbon Credits
+          <div className="flex flex-1 flex-col gap-2 p-6">
+            <h3 className="text-xl font-bold text-primary-700 dark:text-primary-400">
+              Waste Collection
             </h3>
-            <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
-              Revenue through carbon credits and climate finance.
+            <p className="text-base text-gray-600 dark:text-gray-400">
+              Service fees from residential and commercial clients.
+            </p>
+          </div>
+        </div>
+        <div className="group flex flex-col overflow-hidden rounded-xl bg-white shadow-lg transition-all hover:scale-105 hover:shadow-2xl dark:bg-gray-800">
+          <div className="aspect-video w-full overflow-hidden">
+            <div
+              className="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+              style={{
+                backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuBu8Ygh2FeRI6tGJCDwTRedySTPof5fUPY-GCsu-glbFqrYxCF4hr_rqaRivtCMVxzN8K1rNCh-doKIJw7FS61x6w6vsIxWVL-sUFU_wwjicDORVzn0UUrkjasqSi84Cvukkcc_izO33qzYw0eLboN0HCdIAYNeHc2K5mPgkSvZRaVkqvHOSCKDehyJtipogS84DbC8wa-KeqpOw_EcxWMar_6tymsmZGaz5unx31_daj0MBoxjXhe0NKZEZBZHL_ubHxrL56x7dBU")`,
+              }}
+            ></div>
+          </div>
+          <div className="flex flex-1 flex-col gap-2 p-6">
+            <h3 className="text-xl font-bold text-primary-700 dark:text-primary-400">
+              Recycled Materials
+            </h3>
+            <p className="text-base text-gray-600 dark:text-gray-400">
+              Revenue from selling processed recyclables.
+            </p>
+          </div>
+        </div>
+        <div className="group flex flex-col overflow-hidden rounded-xl bg-white shadow-lg transition-all hover:scale-105 hover:shadow-2xl dark:bg-gray-800">
+          <div className="aspect-video w-full overflow-hidden">
+            <div
+              className="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+              style={{
+                backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuCp3SPY-PX-znUWsuZbii1-h2TLoz74wdF2USHecLwpgH7JVS1k4_uxdgvt7sQE8DK0R7nM14ZGfQK4mZFB39FQ7OWiGJlBzb0Y-n_9iv5SUnCzetNRdKsWKW0Tt8MkwQAM60FM35SAn3oReh5dUdCEXgpxVpL8SBF8SdRL2EXwzYEb_l-oe-O_3Qyl6JmGggGPfZuoQd1qR_QwS2A1fN6MJZlqP_Rejn6oPF_XjBQRcKQ1bYjO6MRmcUlQNXL-VQqMCy8xgUn2UsM")`,
+              }}
+            ></div>
+          </div>
+          <div className="flex flex-1 flex-col gap-2 p-6">
+            <h3 className="text-xl font-bold text-primary-700 dark:text-primary-400">
+              Waste-to-Energy
+            </h3>
+            <p className="text-base text-gray-600 dark:text-gray-400">
+              Income from generating clean energy from waste.
+            </p>
+          </div>
+        </div>
+        <div className="group flex flex-col overflow-hidden rounded-xl bg-white shadow-lg transition-all hover:scale-105 hover:shadow-2xl dark:bg-gray-800">
+          <div className="aspect-video w-full overflow-hidden">
+            <div
+              className="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+              style={{
+                backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuDKuCsq2K1dachjMvSGNS_bNNRxxN_cw3SmQD_PKE5gi5uOfj1blHTqVsKQQGUlV-d7FnH21CE0l6LKNdaTyX7o3XF4wRKNHmSQvjhKY0bh4WdQCkzFqVbW-eJEfnji9pmy6cqwQde_UKWsu-5_GuTrKpzFLfwi769YFYM19p0dkkRN2yrmtBUOf4-rn97L670kGN1gk5iGayvf1d1yw4Q9PN6Yzg_A8Z2CPLBYnuwf-sTHMGe3W9er2Lpe77p1RDP1Gw4IIVt4vaM")`,
+              }}
+            ></div>
+          </div>
+          <div className="flex flex-1 flex-col gap-2 p-6">
+            <h3 className="text-xl font-bold text-primary-700 dark:text-primary-400">
+              Carbon Credits
+            </h3>
+            <p className="text-base text-gray-600 dark:text-gray-400">
+              Earnings from verified GHG emission reductions.
             </p>
           </div>
         </div>
