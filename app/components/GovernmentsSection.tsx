@@ -1,28 +1,42 @@
 export default function GovernmentsSection() {
   return (
-    <section className="py-16 md:py-24 bg-background-light dark:bg-background-dark">
-      <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <div className="bg-gradient-to-bl from-green-300 to-amber-300 dark:from-green-800 dark:to-amber-800 rounded-xl p-1 shadow-lg aspect-video">
-            <div className="bg-background-light dark:bg-background-dark rounded-lg h-full w-full flex items-center justify-center">
-              <span className="text-2xl font-bold text-neutral-400 dark:text-neutral-600">
-                Image Placeholder
-              </span>
-            </div>
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="order-2 md:order-1">
+        <h2 className="mb-2 text-3xl font-bold tracking-tight text-primary-green">
+          For Governments
+        </h2>
+        <p className="mb-6 text-subtle-light dark:text-subtle-dark">
+          Partnering with governments to implement comprehensive waste
+          management systems, promoting environmental sustainability and public
+          health.
+        </p>
+        <div className="space-y-4">
+          <div className="flex items-center justify-between rounded-lg bg-background-light p-4 shadow-sm transition-all hover:shadow-lg dark:bg-background-dark">
+            <p className="font-medium">City-Wide Waste Collection</p>
+            <button className="rounded-lg bg-primary-green/10 px-4 py-2 text-sm font-medium text-primary-green transition-colors hover:bg-primary-green/20">
+              Learn More
+            </button>
+          </div>
+          <div className="flex items-center justify-between rounded-lg bg-background-light p-4 shadow-sm transition-all hover:shadow-lg dark:bg-background-dark">
+            <p className="font-medium">Waste-to-Energy Projects</p>
+            <button className="rounded-lg bg-primary-green/10 px-4 py-2 text-sm font-medium text-primary-green transition-colors hover:bg-primary-green/20">
+              Learn More
+            </button>
+          </div>
+          <div className="flex items-center justify-between rounded-lg bg-background-light p-4 shadow-sm transition-all hover:shadow-lg dark:bg-background-dark">
+            <p className="font-medium">Public Awareness Campaigns</p>
+            <button className="rounded-lg bg-primary-green/10 px-4 py-2 text-sm font-medium text-primary-green transition-colors hover:bg-primary-green/20">
+              Learn More
+            </button>
           </div>
         </div>
-        <div>
-          <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-neutral-100">
-            For Governments & Municipalities
-          </h2>
-          <p className="mt-4 text-lg text-neutral-700 dark:text-neutral-300">
-            Government solutions for sustainable city management, including
-            waste infrastructure and community engagement programs.
-          </p>
-          <button className="mt-8 bg-primary hover:bg-primary/90 text-background-dark font-bold py-3 px-6 rounded-lg transition-colors">
-            Discover Government Solutions
-          </button>
-        </div>
+      </div>
+      <div className="order-1 md:order-2">
+        <img
+          alt="Modern African city with clean streets"
+          className="rounded-xl object-cover shadow-xl"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnnEsCxpP0t4T_tmWjwKD2ful6lVrsMVjtgqnu0PwVPdGiTKSTgDK4H9qzJ-sYUnsIAxH_mgsprJYvaJ9fu6e9y0zsYWI3dnfOjLczj85-i5nEzQzJr_hIfxTNuz_sAv_V9S3D6Ytw6NkvssDUX7XWEcmyugm6qGmvbi21yK_m-SKfiXb97C928Qg6ne68Aj5_Y4gisFS2tURCB19NN4pExjXTzsijZS6xA02QaDDDE7UL6gC1GxvdMTHvjXIGu8iSIubWymp17I8"
+        />
       </div>
     </section>
   );

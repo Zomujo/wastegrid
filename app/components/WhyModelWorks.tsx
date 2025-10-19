@@ -9,7 +9,7 @@ export default function WhyModelWorks() {
           backgroundPosition: "center",
         }}
       ></div>
-      <div className="relative z-10">
+      <div className="relative z-1">
         <h2 className="mb-6 text-4xl font-bold tracking-tight">
           Why This Model Works
         </h2>
