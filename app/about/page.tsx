@@ -3,6 +3,7 @@ import AboutHero from "../components/AboutHero";
 import OpportunitySection from "../components/OpportunitySection";
 import SolutionSection from "../components/SolutionSection";
 import PillarsSection from "../components/PillarsSection";
+import GlobalGovernanceSection from "../components/GlobalGovernanceSection";
 import GlobalAgendasSection from "../components/GlobalAgendasSection";
 import GetInvolvedCTA from "../components/GetInvolvedCTA";
 
@@ -18,6 +19,7 @@ export default function AboutPage() {
               <OpportunitySection />
               <SolutionSection />
               <PillarsSection />
+              <GlobalGovernanceSection />
               <GlobalAgendasSection />
               <GetInvolvedCTA />
             </div>

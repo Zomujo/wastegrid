@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background-light: #f1f5f9;
-  --background-dark: #1e293b;
+  --background-light: #f6f8f7;
+  --background-dark: #112117;
   --content-light: #0f172a;
   --content-dark: #e2e8f0;
   --subtle-light: #64748b;
   --subtle-dark: #94a3b8;
   --border-light: #dce5df;
   --border-dark: #2a3f33;
-  --primary: #4ade80;
+  --primary: #1dc962;
   --primary-50: #f0fdf4;
   --primary-100: #dcfce7;
   --primary-200: #bbf7d0;
@@ -70,7 +70,7 @@
   --color-secondary-950: var(--secondary-950);
   --color-primary-green: var(--primary-green);
   --color-primary-orange: var(--primary-orange);
-  --font-display: "Space Grotesk", sans-serif;
+  --font-display: "Manrope", sans-serif;
 }
 
 body {
@@ -91,4 +91,23 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Hide scrollbar */
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
+
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* WebKit */
 }

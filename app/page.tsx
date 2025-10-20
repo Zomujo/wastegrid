@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
+import ThreePillarsSection from "./components/ThreePillarsSection";
 import ThesisHero from "./components/ThesisHero";
 import OpportunitySolution from "./components/OpportunitySolution";
 import PillarsSection from "./components/PillarsSection";
@@ -13,6 +14,8 @@ export default function Home() {
         <div className="container mx-auto px-6 py-10">
           <HeroSection />
         </div>
+
+        <ThreePillarsSection />
 
         <div className="w-full">
           <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">

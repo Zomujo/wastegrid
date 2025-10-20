@@ -10,7 +10,7 @@ export default function HeroSection() {
         backgroundPosition: "center",
       }}
     >
-      <div className="z-10 flex max-w-3xl flex-col gap-6 text-white">
+      <div className="z-1 flex max-w-3xl flex-col gap-6 text-white">
         <h1 className="text-4xl font-bold tracking-tight md:text-6xl">
           The Future of Waste in Africa is{" "}
           <span className="gradient-text">Circular.</span>
