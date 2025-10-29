@@ -1,3 +1,5 @@
+import MaterialIcon from "./MaterialIcon";
+
 export default function GlobalGovernanceSection() {
   return (
     <div className="min-h-screen w-full flex items-center justify-center py-16 px-4">
@@ -16,9 +18,7 @@ export default function GlobalGovernanceSection() {
           <div className="bg-background-light dark:bg-background-dark p-6 rounded-xl border border-background-dark/10 dark:border-background-light/10 shadow-sm hover:shadow-lg transition-shadow duration-300">
             <div className="flex items-center gap-4 mb-4">
               <div className="bg-primary/10 p-3 rounded-full">
-                <span className="material-symbols-outlined text-primary text-2xl">
-                  corporate_fare
-                </span>
+                <MaterialIcon icon="corporate_fare" className="text-primary text-2xl" />
               </div>
               <h3 className="text-xl font-bold text-background-dark dark:text-background-light">
                 Corporate ESG & Scope 3
@@ -33,9 +33,7 @@ export default function GlobalGovernanceSection() {
           <div className="bg-background-light dark:bg-background-dark p-6 rounded-xl border border-background-dark/10 dark:border-background-light/10 shadow-sm hover:shadow-lg transition-shadow duration-300">
             <div className="flex items-center gap-4 mb-4">
               <div className="bg-primary/10 p-3 rounded-full">
-                <span className="material-symbols-outlined text-primary text-2xl">
-                  monitoring
-                </span>
+                <MaterialIcon icon="monitoring" className="text-primary text-2xl" />
               </div>
               <h3 className="text-xl font-bold text-background-dark dark:text-background-light">
                 Climate Finance & VCRs
@@ -50,9 +48,7 @@ export default function GlobalGovernanceSection() {
           <div className="bg-background-light dark:bg-background-dark p-6 rounded-xl border border-background-dark/10 dark:border-background-light/10 shadow-sm hover:shadow-lg transition-shadow duration-300">
             <div className="flex items-center gap-4 mb-4">
               <div className="bg-primary/10 p-3 rounded-full">
-                <span className="material-symbols-outlined text-primary text-2xl">
-                  public
-                </span>
+                <MaterialIcon icon="public" className="text-primary text-2xl" />
               </div>
               <h3 className="text-xl font-bold text-background-dark dark:text-background-light">
                 Global Agendas

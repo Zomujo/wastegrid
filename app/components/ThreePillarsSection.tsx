@@ -1,3 +1,5 @@
+import MaterialIcon from "./MaterialIcon";
+
 export default function ThreePillarsSection() {
   return (
     <div
@@ -33,9 +35,7 @@ export default function ThreePillarsSection() {
                 className="flex h-12 w-12 items-center justify-center rounded-lg"
                 style={{ backgroundColor: "#1dc962" }}
               >
-                <span className="material-symbols-outlined text-white">
-                  public
-                </span>
+                <MaterialIcon icon="public" className="text-white" />
               </div>
               <div className="mt-6 flex flex-col gap-2">
                 <h3 className="text-xl font-bold text-white">
@@ -60,9 +60,7 @@ export default function ThreePillarsSection() {
                 className="flex h-12 w-12 items-center justify-center rounded-lg"
                 style={{ backgroundColor: "#1dc962" }}
               >
-                <span className="material-symbols-outlined text-white">
-                  recycling
-                </span>
+                <MaterialIcon icon="recycling" className="text-white" />
               </div>
               <div className="mt-6 flex flex-col gap-2">
                 <h3 className="text-xl font-bold text-white">
@@ -87,9 +85,7 @@ export default function ThreePillarsSection() {
                 className="flex h-12 w-12 items-center justify-center rounded-lg"
                 style={{ backgroundColor: "#1dc962" }}
               >
-                <span className="material-symbols-outlined text-white">
-                  groups
-                </span>
+                <MaterialIcon icon="groups" className="text-white" />
               </div>
               <div className="mt-6 flex flex-col gap-2">
                 <h3 className="text-xl font-bold text-white">

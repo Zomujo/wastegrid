@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MaterialIcon from "./MaterialIcon";
 
 export default function ThesisHero() {
   return (
@@ -28,7 +29,7 @@ export default function ThesisHero() {
         href="/solutions"
       >
         <span className="truncate">Discover Our Solutions</span>
-        <span className="material-symbols-outlined">arrow_forward</span>
+        <MaterialIcon icon="arrow_forward" className="" />
       </Link>
     </div>
   );

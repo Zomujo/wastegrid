@@ -1,3 +1,5 @@
+import MaterialIcon from "./MaterialIcon";
+
 export default function PartnerAdvantage() {
   return (
     <section className="mb-20">
@@ -14,9 +16,7 @@ export default function PartnerAdvantage() {
       </h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div className="bg-white dark:bg-background-dark p-6 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col items-start gap-4">
-          <span className="material-symbols-outlined text-4xl text-primary">
-            payments
-          </span>
+          <MaterialIcon icon="payments" className="text-4xl text-primary" />
           <h4 className="text-lg font-bold text-slate-900 dark:text-white">
             Increased Earning Potential
           </h4>
@@ -26,9 +26,7 @@ export default function PartnerAdvantage() {
         </div>
 
         <div className="bg-white dark:bg-background-dark p-6 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col items-start gap-4">
-          <span className="material-symbols-outlined text-4xl text-primary">
-            groups
-          </span>
+          <MaterialIcon icon="groups" className="text-4xl text-primary" />
           <h4 className="text-lg font-bold text-slate-900 dark:text-white">
             Access to a Growing Network
           </h4>
@@ -38,9 +36,7 @@ export default function PartnerAdvantage() {
         </div>
 
         <div className="bg-white dark:bg-background-dark p-6 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col items-start gap-4">
-          <span className="material-symbols-outlined text-4xl text-primary">
-            trending_up
-          </span>
+          <MaterialIcon icon="trending_up" className="text-4xl text-primary" />
           <h4 className="text-lg font-bold text-slate-900 dark:text-white">
             Professional Development
           </h4>
@@ -50,9 +46,7 @@ export default function PartnerAdvantage() {
         </div>
 
         <div className="bg-white dark:bg-background-dark p-6 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col items-start gap-4">
-          <span className="material-symbols-outlined text-4xl text-primary">
-            shield
-          </span>
+          <MaterialIcon icon="shield" className="text-4xl text-primary" />
           <h4 className="text-lg font-bold text-slate-900 dark:text-white">
             Safety and Security
           </h4>
@@ -62,9 +56,7 @@ export default function PartnerAdvantage() {
         </div>
 
         <div className="bg-white dark:bg-background-dark p-6 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col items-start gap-4">
-          <span className="material-symbols-outlined text-4xl text-primary">
-            workspace_premium
-          </span>
+          <MaterialIcon icon="workspace_premium" className="text-4xl text-primary" />
           <h4 className="text-lg font-bold text-slate-900 dark:text-white">
             Certification & Recognition
           </h4>
@@ -74,9 +66,7 @@ export default function PartnerAdvantage() {
         </div>
 
         <div className="bg-white dark:bg-background-dark p-6 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col items-start gap-4">
-          <span className="material-symbols-outlined text-4xl text-primary">
-            handshake
-          </span>
+          <MaterialIcon icon="handshake" className="text-4xl text-primary" />
           <h4 className="text-lg font-bold text-slate-900 dark:text-white">
             Community Impact
           </h4>

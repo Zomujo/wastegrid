@@ -1,3 +1,5 @@
+import MaterialIcon from "./MaterialIcon";
+
 export default function BenefitsSection() {
   return (
     <div>
@@ -6,12 +8,7 @@ export default function BenefitsSection() {
       </h2>
       <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col gap-4 rounded-xl bg-primary-50 dark:bg-primary-950/50 p-6 text-center items-center">
-          <span
-            className="material-symbols-outlined text-primary-500"
-            style={{ fontSize: "40px" }}
-          >
-            payments
-          </span>
+          <MaterialIcon icon="payments" className="text-primary-500 text-[40px]" />
           <div className="flex flex-col gap-1">
             <h3 className="text-lg font-bold text-stone-900 dark:text-white">
               Increased Earning Potential
@@ -24,12 +21,7 @@ export default function BenefitsSection() {
         </div>
 
         <div className="flex flex-col gap-4 rounded-xl bg-primary-50 dark:bg-primary-950/50 p-6 text-center items-center">
-          <span
-            className="material-symbols-outlined text-primary-500"
-            style={{ fontSize: "40px" }}
-          >
-            verified
-          </span>
+          <MaterialIcon icon="verified" className="text-primary-500 text-[40px]" />
           <div className="flex flex-col gap-1">
             <h3 className="text-lg font-bold text-stone-900 dark:text-white">
               Professional Certification
@@ -42,12 +34,7 @@ export default function BenefitsSection() {
         </div>
 
         <div className="flex flex-col gap-4 rounded-xl bg-primary-50 dark:bg-primary-950/50 p-6 text-center items-center">
-          <span
-            className="material-symbols-outlined text-primary-500"
-            style={{ fontSize: "40px" }}
-          >
-            groups
-          </span>
+          <MaterialIcon icon="groups" className="text-primary-500 text-[40px]" />
           <div className="flex flex-col gap-1">
             <h3 className="text-lg font-bold text-stone-900 dark:text-white">
               Community and Support
@@ -60,12 +47,7 @@ export default function BenefitsSection() {
         </div>
 
         <div className="flex flex-col gap-4 rounded-xl bg-primary-50 dark:bg-primary-950/50 p-6 text-center items-center">
-          <span
-            className="material-symbols-outlined text-primary-500"
-            style={{ fontSize: "40px" }}
-          >
-            eco
-          </span>
+          <MaterialIcon icon="eco" className="text-primary-500 text-[40px]" />
           <div className="flex flex-col gap-1">
             <h3 className="text-lg font-bold text-stone-900 dark:text-white">
               Environmental Impact

@@ -1,3 +1,5 @@
+import MaterialIcon from "./MaterialIcon";
+
 export default function PillarsSection() {
   return (
     <section className="text-center">
@@ -6,9 +8,7 @@ export default function PillarsSection() {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 flex flex-col items-center gap-4 text-center transform hover:scale-105 transition-transform duration-300">
-          <span className="material-symbols-outlined text-5xl text-primary">
-            recycling
-          </span>
+          <MaterialIcon icon="recycling" className="text-5xl text-primary" />
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
             Waste Reduction & Recycling
           </h3>
@@ -18,9 +18,7 @@ export default function PillarsSection() {
           </p>
         </div>
         <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 flex flex-col items-center gap-4 text-center transform hover:scale-105 transition-transform duration-300">
-          <span className="material-symbols-outlined text-5xl text-secondary">
-            energy_savings_leaf
-          </span>
+          <MaterialIcon icon="energy_savings_leaf" className="text-5xl text-secondary" />
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
             Renewable Energy Generation
           </h3>
@@ -30,9 +28,7 @@ export default function PillarsSection() {
           </p>
         </div>
         <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 flex flex-col items-center gap-4 text-center transform hover:scale-105 transition-transform duration-300">
-          <span className="material-symbols-outlined text-5xl text-orange-500">
-            payments
-          </span>
+          <MaterialIcon icon="payments" className="text-5xl text-orange-500" />
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
             Economic Empowerment
           </h3>
