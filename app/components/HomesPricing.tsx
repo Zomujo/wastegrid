@@ -17,9 +17,6 @@ export default function HomesPricing() {
                 Ideal for small households
               </p>
             </div>
-            <button className="rounded-lg bg-primary-green/10 px-4 py-2 text-sm font-medium text-primary-green transition-colors hover:bg-primary-green/20">
-              Select
-            </button>
           </div>
           <div className="flex items-center justify-between rounded-lg bg-background-light p-4 shadow-sm transition-all hover:shadow-lg dark:bg-background-dark">
             <div>
@@ -28,9 +25,6 @@ export default function HomesPricing() {
                 Suitable for medium-sized families
               </p>
             </div>
-            <button className="rounded-lg bg-primary-green/10 px-4 py-2 text-sm font-medium text-primary-green transition-colors hover:bg-primary-green/20">
-              Select
-            </button>
           </div>
           <div className="flex items-center justify-between rounded-lg bg-background-light p-4 shadow-sm transition-all hover:shadow-lg dark:bg-background-dark">
             <div>
@@ -39,9 +33,6 @@ export default function HomesPricing() {
                 Best for large households with high waste volume
               </p>
             </div>
-            <button className="rounded-lg bg-primary-green/10 px-4 py-2 text-sm font-medium text-primary-green transition-colors hover:bg-primary-green/20">
-              Select
-            </button>
           </div>
         </div>
       </div>

@@ -19,21 +19,12 @@ export default function BusinessesSection() {
         <div className="space-y-4">
           <div className="flex items-center justify-between rounded-lg bg-background-light p-4 shadow-sm transition-all hover:shadow-lg dark:bg-background-dark">
             <p className="font-medium">Waste Audits</p>
-            <button className="rounded-lg bg-primary-orange/10 px-4 py-2 text-sm font-medium text-primary-orange transition-colors hover:bg-primary-orange/20">
-              Learn More
-            </button>
           </div>
           <div className="flex items-center justify-between rounded-lg bg-background-light p-4 shadow-sm transition-all hover:shadow-lg dark:bg-background-dark">
             <p className="font-medium">Recycling Programs</p>
-            <button className="rounded-lg bg-primary-orange/10 px-4 py-2 text-sm font-medium text-primary-orange transition-colors hover:bg-primary-orange/20">
-              Learn More
-            </button>
           </div>
           <div className="flex items-center justify-between rounded-lg bg-background-light p-4 shadow-sm transition-all hover:shadow-lg dark:bg-background-dark">
             <p className="font-medium">Composting Solutions</p>
-            <button className="rounded-lg bg-primary-orange/10 px-4 py-2 text-sm font-medium text-primary-orange transition-colors hover:bg-primary-orange/20">
-              Learn More
-            </button>
           </div>
         </div>
       </div>
