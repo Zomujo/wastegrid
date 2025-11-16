@@ -8,10 +8,36 @@ const manrope = Manrope({
   weight: ["400", "500", "700", "800"],
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://www.wastegridafrica.com";
+const siteName = "Waste Grid";
+const defaultDescription =
+  "The Future of Waste in Africa is Circular. We are transforming waste into climate solutions and empowering communities across Africa.";
+
 export const metadata: Metadata = {
-  title: "Waste Grid",
-  description:
-    "The Future of Waste in Africa is Circular. We are transforming waste into climate solutions and empowering communities across Africa.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: siteName,
+    template: `%s | ${siteName}`,
+  },
+  description: defaultDescription,
+  keywords: [
+    "waste management",
+    "circular economy",
+    "Africa",
+    "climate solutions",
+    "sustainability",
+    "recycling",
+    "waste transformation",
+  ],
+  authors: [{ name: siteName }],
+  creator: siteName,
+  publisher: siteName,
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   icons: {
     icon: [
       { url: "/new_logo.png", sizes: "any" },
@@ -19,6 +45,43 @@ export const metadata: Metadata = {
       { url: "/new_logo.png", sizes: "16x16", type: "image/png" },
     ],
     apple: "/new_logo.png",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: siteName,
+    title: siteName,
+    description: defaultDescription,
+    images: [
+      {
+        url: "/new_logo.png",
+        width: 1200,
+        height: 630,
+        alt: siteName,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteName,
+    description: defaultDescription,
+    images: ["/new_logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    // Add your Google Search Console verification code here
+    // google: "your-google-verification-code",
   },
 };
 

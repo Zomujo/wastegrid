@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Navbar from "../components/Navbar";
 import ImpactHero from "../components/ImpactHero";
 import ImpactMetrics from "../components/ImpactMetrics";
@@ -5,6 +6,12 @@ import GlobalAgendasCards from "../components/GlobalAgendasCards";
 import RevenueStreams from "../components/RevenueStreams";
 import WhyModelWorks from "../components/WhyModelWorks";
 import InvestCTA from "../components/InvestCTA";
+
+export const metadata: Metadata = {
+  title: "Impact",
+  description:
+    "See the measurable impact of Waste Grid's circular economy model. Discover our metrics, revenue streams, and how we're creating positive change across Africa.",
+};
 
 export default function ImpactPage() {
   return (

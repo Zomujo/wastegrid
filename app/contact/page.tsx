@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import Navbar from "../components/Navbar";
 import ContactHero from "../components/ContactHero";
 import ContactInfo from "../components/ContactInfo";
 import ContactForm from "../components/ContactForm";
 import ContactCTA from "../components/ContactCTA";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Get in touch with Waste Grid. Reach out to learn more about our waste management solutions, partnerships, or how to get involved in transforming waste in Africa.",
+};
 
 export default function ContactPage() {
   return (

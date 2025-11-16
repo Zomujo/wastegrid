@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import NetworkHeroNew from "../components/NetworkHeroNew";
@@ -6,6 +7,12 @@ import BenefitsSection from "../components/BenefitsSection";
 import TestimonialSection from "../components/TestimonialSection";
 import WhyItMattersSection from "../components/WhyItMattersSection";
 import NetworkCTA from "../components/NetworkCTA";
+
+export const metadata: Metadata = {
+  title: "Network",
+  description:
+    "Join the Waste Grid network. Partner with us to build a circular economy in Africa. Discover the benefits of becoming a Waste Grid partner.",
+};
 
 export default function NetworkPage() {
   return (

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import ThreePillarsSection from "./components/ThreePillarsSection";
@@ -5,6 +6,12 @@ import ThesisHero from "./components/ThesisHero";
 import OpportunitySolution from "./components/OpportunitySolution";
 import PillarsSection from "./components/PillarsSection";
 import GlobalAgendas from "./components/GlobalAgendas";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description:
+    "The Future of Waste in Africa is Circular. We are transforming waste into climate solutions and empowering communities across Africa.",
+};
 
 export default function Home() {
   return (

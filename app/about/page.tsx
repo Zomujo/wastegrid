@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Navbar from "../components/Navbar";
 import AboutHero from "../components/AboutHero";
 import OpportunitySection from "../components/OpportunitySection";
@@ -6,6 +7,12 @@ import PillarsSection from "../components/PillarsSection";
 import GlobalGovernanceSection from "../components/GlobalGovernanceSection";
 import GlobalAgendasSection from "../components/GlobalAgendasSection";
 import GetInvolvedCTA from "../components/GetInvolvedCTA";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Learn about Waste Grid's mission to transform waste into climate solutions and empower communities across Africa through circular economy principles.",
+};
 
 export default function AboutPage() {
   return (
