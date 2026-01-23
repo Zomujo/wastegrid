@@ -80,9 +80,35 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    // Add your Google Search Console verification code here
-    // google: "your-google-verification-code",
+    // Set the Google verification code via environment variable.
+    // In production set NEXT_PUBLIC_GOOGLE_VERIFICATION to your code.
+    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || undefined,
   },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
+      name: siteName,
+      potentialAction: {
+        "@type": "SearchAction",
+        target: `${siteUrl}/search?q={search_term_string}`,
+        "query-input": "required name=search_term_string",
+      },
+    },
+    {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      name: siteName,
+      url: siteUrl,
+      logo: `${siteUrl}/new_logo.png`,
+      sameAs: [],
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -104,6 +130,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <link rel="icon" href="/new_logo.png" sizes="any" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body
         className={`${manrope.variable} font-display antialiased bg-background-light dark:bg-background-dark text-content-light dark:text-content-dark`}
