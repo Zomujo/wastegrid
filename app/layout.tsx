@@ -79,11 +79,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    // Set the Google verification code via environment variable.
-    // In production set NEXT_PUBLIC_GOOGLE_VERIFICATION to your code.
-    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || undefined,
-  },
 };
 
 const jsonLd = {
