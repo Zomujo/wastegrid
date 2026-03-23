@@ -12,7 +12,7 @@ const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://www.wastegridafrica.com";
 const siteName = "Waste Grid";
 const defaultDescription =
-  "The Future of Waste in Africa is Circular. We are transforming waste into climate solutions and empowering communities across Africa.";
+  "WasteGrid is an industrial platform enabling Africa's industrial future — developing the foundational systems across materials, energy, and industrial infrastructure.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

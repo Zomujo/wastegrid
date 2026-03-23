@@ -36,6 +36,18 @@
   --primary-orange: #f97316;
 }
 
+@theme {
+  --color-brand-navy: #0A1628;
+  --color-brand-gold: #F5B731;
+  --color-brand-surface: #111D32;
+  --color-brand-border: #1E2D45;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
 @theme inline {
   --color-background-light: #f6f8f7;
   --color-background-dark: #112117;

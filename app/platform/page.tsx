@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar";
 import PlatformHero from "../components/PlatformHero";
 import FocusAreasSection from "../components/FocusAreasSection";
 import WhatWeAreBuilding from "../components/WhatWeAreBuilding";
-import JoinUsCTA from "../components/JoinUsCTA";
 
 export const metadata: Metadata = {
   title: "Platform",
@@ -19,7 +18,6 @@ export default function PlatformPage() {
         <PlatformHero />
         <FocusAreasSection />
         <WhatWeAreBuilding />
-        <JoinUsCTA />
       </main>
     </div>
   );

@@ -4,7 +4,6 @@ import AboutHero from "../components/AboutHero";
 import ApproachSection from "../components/ApproachSection";
 import WhatWeAreBuilding from "../components/WhatWeAreBuilding";
 import PeopleSection from "../components/PeopleSection";
-import JoinUsCTA from "../components/JoinUsCTA";
 
 export const metadata: Metadata = {
   title: "About",
@@ -21,7 +20,6 @@ export default function AboutPage() {
         <ApproachSection />
         <WhatWeAreBuilding />
         <PeopleSection />
-        <JoinUsCTA />
       </main>
     </div>
   );

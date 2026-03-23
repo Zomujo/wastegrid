@@ -33,20 +33,8 @@ export default function JoinUsCTA() {
 
       <div className="relative z-10 flex items-center justify-center min-h-[520px] py-24 sm:py-32">
         <div className="text-center px-6 max-w-3xl mx-auto">
-          {/* Label */}
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <div className="h-px w-10" style={{ backgroundColor: "#1dc962" }} />
-            <span
-              className="text-xs font-semibold tracking-[0.2em] uppercase"
-              style={{ color: "#1dc962" }}
-            >
-              Join Us
-            </span>
-            <div className="h-px w-10" style={{ backgroundColor: "#1dc962" }} />
-          </div>
-
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl mb-6 leading-[1.08]">
-            Build what enables everything else.
+            Building what enables everything else.
           </h2>
 
           <p
