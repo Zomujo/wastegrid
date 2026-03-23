@@ -1,17 +1,26 @@
 export default function ContactCTA() {
   return (
-    <div className="mt-24 rounded-xl bg-gradient-to-r from-primary/80 to-yellow-500/80 p-10 text-center text-background-dark dark:text-background-dark">
-      <h2 className="text-3xl font-bold tracking-tight">
-        Ready to Transform Waste into Climate Solutions?
+    <div
+      className="mt-24 rounded-xl p-10 text-center"
+      style={{
+        background: "linear-gradient(135deg, #112117 0%, #0d1a13 100%)",
+        border: "1px solid rgba(29, 201, 98, 0.15)",
+      }}
+    >
+      <h2 className="text-3xl font-bold tracking-tight text-white">
+        Ready to build Africa&apos;s industrial future?
       </h2>
-      <p className="mx-auto mt-3 max-w-2xl">
-        Join us in our mission to create a circular economy in Africa.
-        Let&apos;s work together to build a sustainable future for generations
-        to come.
+      <p className="mx-auto mt-3 max-w-2xl leading-relaxed" style={{ color: "#94a3b8" }}>
+        We are creating the systems that power industries, support economies,
+        and define long-term growth. If that is the work you want to be part of,
+        we want to hear from you.
       </p>
       <div className="mt-8 flex justify-center">
-        <button className="flex h-12 items-center justify-center rounded-lg bg-background-light px-6 font-bold text-primary transition-colors hover:bg-background-light/90 dark:bg-background-dark dark:text-primary dark:hover:bg-background-dark/90">
-          Get Started Today
+        <button
+          className="flex h-12 items-center justify-center rounded-lg px-8 font-bold text-white transition-all hover:scale-105"
+          style={{ backgroundColor: "#1dc962" }}
+        >
+          Start a Conversation
         </button>
       </div>
     </div>

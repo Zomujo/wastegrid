@@ -1,4 +1,4 @@
-export default function AboutHero() {
+export default function SustainabilityHero() {
   return (
     <div
       className="relative py-24 sm:py-32 overflow-hidden"
@@ -19,22 +19,22 @@ export default function AboutHero() {
             className="text-xs font-semibold tracking-[0.2em] uppercase"
             style={{ color: "#1dc962" }}
           >
-            About WasteGrid
+            Sustainability
           </span>
           <div className="h-px w-10" style={{ backgroundColor: "#1dc962" }} />
         </div>
 
         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl leading-[1.08] mb-6 max-w-3xl mx-auto">
-          An industrial platform for Africa&apos;s future.
+          Embedded in how systems are designed and operated.
         </h1>
 
         <p
           className="text-base leading-relaxed max-w-2xl mx-auto"
           style={{ color: "#94a3b8" }}
         >
-          WasteGrid is developing the foundational systems required for
-          Africa&apos;s next phase of growth — across materials, energy, and
-          industrial infrastructure.
+          Sustainability is not a parallel function. It is a structural
+          requirement — built into every layer of how WasteGrid designs,
+          builds, and operates its systems.
         </p>
       </div>
     </div>

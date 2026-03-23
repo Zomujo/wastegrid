@@ -5,7 +5,7 @@ export default function ContactInfo() {
       <div className="space-y-6">
         <div className="border-t border-content-light/10 dark:border-content-dark/10 pt-6">
           <h3 className="font-bold text-subtle-light dark:text-subtle-dark">
-            Client Services
+            General Enquiries
           </h3>
           <div className="mt-2 space-y-1 text-sm">
             <p>WhatsApp: +233 20 146 2313</p>
@@ -16,15 +16,12 @@ export default function ContactInfo() {
 
         <div className="border-t border-content-light/10 dark:border-content-dark/10 pt-6">
           <h3 className="font-bold text-subtle-light dark:text-subtle-dark">
-            Partner Onboarding
+            Partnerships & Investment
           </h3>
           <div className="mt-2 space-y-1 text-sm">
             <p>WhatsApp: +233 20 146 2313</p>
             <p>Phone: +233 20 146 2313</p>
             <p>Email: partners@wastegrid.com</p>
-            <a className="text-primary hover:underline" href="#">
-              Apply here
-            </a>
           </div>
         </div>
 

@@ -9,7 +9,7 @@ import ContactCTA from "../components/ContactCTA";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Waste Grid. Reach out to learn more about our waste management solutions, partnerships, or how to get involved in transforming waste in Africa.",
+    "Get in touch with WasteGrid. Reach out to explore partnerships, investment opportunities, or collaboration across our industrial platform.",
 };
 
 export default function ContactPage() {
