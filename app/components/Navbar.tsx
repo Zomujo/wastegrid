@@ -18,7 +18,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-10 flex items-center justify-between whitespace-nowrap border-b border-primary-green/20 bg-background-light/80 px-10 py-4 backdrop-blur-sm dark:bg-background-dark/80">
+    <header className="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-primary-green/20 bg-background-light/95 px-10 py-4 backdrop-blur-sm dark:bg-background-dark/95">
       <div className="flex items-center gap-3">
         <Link href="/" className="flex items-center">
           <div className="relative w-48 h-16">
@@ -54,33 +54,23 @@ export default function Navbar() {
         </Link>
         <Link
           className={`text-sm font-medium ${
-            isActive("/solutions")
+            isActive("/platform")
               ? "text-primary-green"
               : "hover:text-primary-green"
           }`}
-          href="/solutions"
+          href="/platform"
         >
-          Solutions
+          Platform
         </Link>
         <Link
           className={`text-sm font-medium ${
-            isActive("/network")
+            isActive("/sustainability")
               ? "text-primary-green"
               : "hover:text-primary-green"
           }`}
-          href="/network"
+          href="/sustainability"
         >
-          Network
-        </Link>
-        <Link
-          className={`text-sm font-medium ${
-            isActive("/impact")
-              ? "text-primary-green"
-              : "hover:text-primary-green"
-          }`}
-          href="/impact"
-        >
-          Impact
+          Sustainability
         </Link>
         <Link
           className={`text-sm font-medium ${
@@ -145,36 +135,25 @@ export default function Navbar() {
             </Link>
             <Link
               className={`text-base font-medium ${
-                isActive("/solutions")
+                isActive("/platform")
                   ? "text-primary-green"
                   : "hover:text-primary-green"
               }`}
-              href="/solutions"
+              href="/platform"
               onClick={() => setIsMenuOpen(false)}
             >
-              Solutions
+              Platform
             </Link>
             <Link
               className={`text-base font-medium ${
-                isActive("/network")
+                isActive("/sustainability")
                   ? "text-primary-green"
                   : "hover:text-primary-green"
               }`}
-              href="/network"
+              href="/sustainability"
               onClick={() => setIsMenuOpen(false)}
             >
-              Network
-            </Link>
-            <Link
-              className={`text-base font-medium ${
-                isActive("/impact")
-                  ? "text-primary-green"
-                  : "hover:text-primary-green"
-              }`}
-              href="/impact"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Impact
+              Sustainability
             </Link>
             <Link
               className={`text-base font-medium ${
