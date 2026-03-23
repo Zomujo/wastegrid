@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import MaterialIcon from "./MaterialIcon";
 
 export default function HeroSection() {
@@ -8,24 +7,24 @@ export default function HeroSection() {
       className="relative min-h-screen flex items-center overflow-hidden"
       style={{ backgroundColor: "#112117" }}
     >
-      {/* Background image */}
-      <div className="absolute inset-0">
-        <Image
-          src="/hero-bg.jpg"
-          alt="WasteGrid industrial platform"
-          fill
-          className="object-cover object-center"
-          priority
-        />
-        {/* Dark overlay — keeps text legible */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to right, rgba(17, 33, 23, 0.92) 0%, rgba(17, 33, 23, 0.75) 55%, rgba(17, 33, 23, 0.4) 100%)",
-          }}
-        />
-      </div>
+      {/* Background video */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover object-center"
+      >
+        <source src="/hero.mp4" type="video/mp4" />
+      </video>
+      {/* Dark overlay — keeps text legible */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(to right, rgba(17, 33, 23, 0.92) 0%, rgba(17, 33, 23, 0.75) 55%, rgba(17, 33, 23, 0.4) 100%)",
+        }}
+      />
 
       <div className="relative z-10 container mx-auto px-6 py-32 lg:py-40">
         <div className="max-w-4xl">

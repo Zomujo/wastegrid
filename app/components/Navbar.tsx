@@ -18,7 +18,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-10 flex items-center justify-between whitespace-nowrap border-b border-primary-green/20 bg-background-light/80 px-10 py-4 backdrop-blur-sm dark:bg-background-dark/80">
+    <header className="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-primary-green/20 bg-background-light/95 px-10 py-4 backdrop-blur-sm dark:bg-background-dark/95">
       <div className="flex items-center gap-3">
         <Link href="/" className="flex items-center">
           <div className="relative w-48 h-16">
