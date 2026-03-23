@@ -1,11 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 import MaterialIcon from "./MaterialIcon";
 
 const expertise = [
-  { icon: "engineering", label: "Engineering" },
-  { icon: "science", label: "Materials" },
-  { icon: "build", label: "Operations" },
-  { icon: "devices", label: "Technology" },
+  { image: "/people-engineering.jpg", label: "Engineering" },
+  { image: "/people-materials.jpg", label: "Materials" },
+  { image: "/people-operations.jpg", label: "Operations" },
+  { image: "/people-technology.jpg", label: "Technology" },
 ];
 
 export default function PeopleSection() {
@@ -51,24 +52,32 @@ export default function PeopleSection() {
               </Link>
             </div>
 
-            {/* Right — expertise grid */}
-            <div className="grid grid-cols-2 gap-5">
+            {/* Right — expertise image grid */}
+            <div className="grid grid-cols-2 gap-4">
               {expertise.map((item) => (
                 <div
                   key={item.label}
-                  className="flex flex-col items-center justify-center gap-3 rounded-xl p-10 border border-gray-200 dark:border-white/[0.07] text-center"
-                  style={{ background: "rgba(17, 33, 23, 0.03)" }}
+                  className="group relative overflow-hidden rounded-xl"
+                  style={{ aspectRatio: "1/1" }}
                 >
+                  <Image
+                    src={item.image}
+                    alt={item.label}
+                    fill
+                    loading="lazy"
+                    quality={80}
+                    sizes="(max-width: 640px) 50vw, 25vw"
+                    className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  />
+                  {/* Gradient overlay */}
                   <div
-                    className="flex h-12 w-12 items-center justify-center rounded-lg"
-                    style={{ backgroundColor: "rgba(29, 201, 98, 0.1)" }}
-                  >
-                    <MaterialIcon
-                      icon={item.icon}
-                      className="text-[24px] text-primary"
-                    />
-                  </div>
-                  <p className="text-base font-semibold text-gray-900 dark:text-white">
+                    className="absolute inset-0"
+                    style={{
+                      background:
+                        "linear-gradient(to top, rgba(17, 33, 23, 0.85) 0%, rgba(17, 33, 23, 0.2) 60%, transparent 100%)",
+                    }}
+                  />
+                  <p className="absolute bottom-0 left-0 right-0 p-4 text-sm font-bold text-white">
                     {item.label}
                   </p>
                 </div>

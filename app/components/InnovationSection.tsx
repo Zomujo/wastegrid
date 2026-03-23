@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const innovationPoints = [
   {
     number: "01",
@@ -27,11 +29,26 @@ const innovationPoints = [
 
 export default function InnovationSection() {
   return (
-    <section
-      className="py-24 sm:py-32"
-      style={{ backgroundColor: "#112117" }}
-    >
-      <div className="container mx-auto px-6">
+    <section className="relative py-24 sm:py-32 overflow-hidden">
+      {/* Full-bleed background image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/focus-digital-infrastructure.jpg"
+          alt=""
+          fill
+          loading="lazy"
+          quality={75}
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        {/* Dark overlay */}
+        <div
+          className="absolute inset-0"
+          style={{ background: "rgba(17, 33, 23, 0.91)" }}
+        />
+      </div>
+
+      <div className="relative z-10 container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <div className="lg:grid lg:grid-cols-2 lg:gap-20 lg:items-start">
             {/* Left */}
@@ -64,8 +81,8 @@ export default function InnovationSection() {
                   key={point.number}
                   className="rounded-xl p-7"
                   style={{
-                    background: "rgba(255, 255, 255, 0.03)",
-                    border: "1px solid rgba(255, 255, 255, 0.07)",
+                    background: "rgba(255, 255, 255, 0.04)",
+                    border: "1px solid rgba(255, 255, 255, 0.09)",
                   }}
                 >
                   <div className="flex items-center gap-3 mb-3">

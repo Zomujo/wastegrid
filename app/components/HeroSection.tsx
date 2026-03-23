@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import MaterialIcon from "./MaterialIcon";
 
 export default function HeroSection() {
@@ -7,24 +8,24 @@ export default function HeroSection() {
       className="relative min-h-screen flex items-center overflow-hidden"
       style={{ backgroundColor: "#112117" }}
     >
-      {/* Radial glow backgrounds */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse 80% 60% at 55% 50%, rgba(29, 201, 98, 0.07) 0%, transparent 70%), radial-gradient(ellipse 50% 70% at 90% 15%, rgba(249, 115, 22, 0.05) 0%, transparent 60%)",
-        }}
-      />
-
-      {/* Subtle grid pattern */}
-      <div
-        className="absolute inset-0 pointer-events-none opacity-[0.04]"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(29, 201, 98, 1) 1px, transparent 1px), linear-gradient(90deg, rgba(29, 201, 98, 1) 1px, transparent 1px)",
-          backgroundSize: "64px 64px",
-        }}
-      />
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/hero-bg.jpg"
+          alt="WasteGrid industrial platform"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* Dark overlay — keeps text legible */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to right, rgba(17, 33, 23, 0.92) 0%, rgba(17, 33, 23, 0.75) 55%, rgba(17, 33, 23, 0.4) 100%)",
+          }}
+        />
+      </div>
 
       <div className="relative z-10 container mx-auto px-6 py-32 lg:py-40">
         <div className="max-w-4xl">

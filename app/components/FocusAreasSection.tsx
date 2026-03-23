@@ -1,93 +1,31 @@
-import MaterialIcon from "./MaterialIcon";
+import Image from "next/image";
 
-const focusAreas = [
+const pillars = [
   {
-    title: "Energy & Electrification",
-    description: "Reliable, scalable energy systems for industrial and commercial operations.",
-    icon: "bolt",
-    bullets: [
-      "Distributed and utility-scale power systems",
-      "Energy storage and hybrid infrastructure",
-      "Electrification of transport and logistics",
-      "Industrial energy optimization",
+    image: "/focus-primary-materials.jpg",
+    category: "Materials",
+    description:
+      "Sourcing, upgrading, and transforming both primary and secondary materials into industrial-grade inputs.",
+    areas: [
+      "Energy Materials",
+      "Industrial Chemicals",
+      "Primary Materials",
+      "Circular Materials",
     ],
   },
   {
-    title: "Energy Materials",
-    description: "Materials that enable energy storage, electrification, and next-generation technologies.",
-    icon: "battery_charging_full",
-    bullets: [
-      "Processing of lithium, cobalt, graphite, and related materials",
-      "Battery components and material supply chains",
-      "Integration of primary and recycled inputs",
-      "Lifecycle management of energy systems",
-    ],
+    image: "/focus-energy-electrification.jpg",
+    category: "Energy",
+    description:
+      "Reliable, scalable energy systems — from generation and storage to industrial consumption and clean fuels.",
+    areas: ["Energy & Electrification", "Clean Fuels"],
   },
   {
-    title: "Industrial Chemicals",
-    description: "Chemical inputs that underpin production across key sectors.",
-    icon: "science",
-    bullets: [
-      "Fertilizers and agrochemical systems",
-      "Construction and infrastructure chemicals",
-      "Mining and processing reagents",
-      "Water and environmental treatment solutions",
-    ],
-  },
-  {
-    title: "Primary Materials",
-    description: "Upgrading natural resources into industrial-grade inputs.",
-    icon: "diamond",
-    bullets: [
-      "Mineral beneficiation and refining",
-      "Metal intermediates and industrial feedstocks",
-      "Industrial minerals for construction and manufacturing",
-      "Localized material supply chains",
-    ],
-  },
-  {
-    title: "Circular Materials",
-    description: "Recovering and reintegrating materials into industrial use.",
-    icon: "recycling",
-    bullets: [
-      "Electronic waste and precious metals recovery",
-      "Plastics recycling into industrial feedstocks",
-      "Scrap metal processing and aggregation",
-      "Industrial waste valorization",
-    ],
-  },
-  {
-    title: "Clean Fuels",
-    description: "Low-carbon fuel systems for industrial applications.",
-    icon: "local_gas_station",
-    bullets: [
-      "Biofuels from agricultural and waste streams",
-      "Waste-to-energy systems",
-      "Alternative fuels for heavy industry",
-      "Emerging hydrogen applications",
-    ],
-  },
-  {
-    title: "Agro & Water Systems",
-    description: "Systems supporting productivity, resilience, and resource security.",
-    icon: "water_drop",
-    bullets: [
-      "Soil health and precision agriculture inputs",
-      "Water treatment and reuse infrastructure",
-      "Bio-based materials from agricultural sources",
-      "Integration of agricultural and industrial systems",
-    ],
-  },
-  {
-    title: "Digital Infrastructure",
-    description: "Platforms that enable visibility, coordination, and scale.",
-    icon: "hub",
-    bullets: [
-      "Materials sourcing and marketplace systems",
-      "Supply chain tracking and logistics visibility",
-      "Pricing intelligence and market data",
-      "Industrial analytics and operational systems",
-    ],
+    image: "/focus-digital-infrastructure.jpg",
+    category: "Industrial Systems",
+    description:
+      "Platforms and physical systems that enable industrial coordination, visibility, and scale.",
+    areas: ["Agro & Water Systems", "Digital Infrastructure"],
   },
 ];
 
@@ -115,53 +53,81 @@ export default function FocusAreasSection() {
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {focusAreas.map((area) => (
+        {/* 3 Pillar Cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {pillars.map((pillar) => (
             <div
-              key={area.title}
-              className="group flex flex-col rounded-xl p-6 border transition-all duration-300 hover:border-primary/40"
-              style={{
-                backgroundColor: "rgba(17, 33, 23, 0.04)",
-                borderColor: "rgba(17, 33, 23, 0.1)",
-              }}
+              key={pillar.category}
+              className="group relative overflow-hidden rounded-2xl"
+              style={{ minHeight: "520px" }}
             >
-              {/* Icon */}
+              {/* Background image */}
+              <Image
+                src={pillar.image}
+                alt={pillar.category}
+                fill
+                loading="lazy"
+                quality={85}
+                sizes="(max-width: 1024px) 100vw, 33vw"
+                className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+              />
+
+              {/* Gradient overlay — dark at bottom, light at top */}
               <div
-                className="flex h-11 w-11 items-center justify-center rounded-lg mb-5"
-                style={{ backgroundColor: "rgba(29, 201, 98, 0.1)" }}
-              >
-                <MaterialIcon
-                  icon={area.icon}
-                  className="text-[22px] text-primary"
-                />
-              </div>
+                className="absolute inset-0"
+                style={{
+                  background:
+                    "linear-gradient(to bottom, rgba(17,33,23,0.25) 0%, rgba(17,33,23,0.55) 40%, rgba(17,33,23,0.97) 100%)",
+                }}
+              />
 
-              {/* Title */}
-              <h3 className="text-base font-bold text-gray-900 dark:text-white mb-2">
-                {area.title}
-              </h3>
+              {/* Content */}
+              <div className="absolute inset-0 flex flex-col justify-between p-8">
+                {/* Top label */}
+                <span
+                  className="text-xs font-semibold tracking-[0.2em] uppercase self-start px-3 py-1 rounded-full"
+                  style={{
+                    color: "#1dc962",
+                    background: "rgba(29,201,98,0.12)",
+                    border: "1px solid rgba(29,201,98,0.25)",
+                  }}
+                >
+                  {pillar.category}
+                </span>
 
-              {/* Description */}
-              <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 leading-relaxed">
-                {area.description}
-              </p>
-
-              {/* Bullets */}
-              <ul className="mt-auto space-y-2">
-                {area.bullets.map((bullet) => (
-                  <li
-                    key={bullet}
-                    className="flex items-start gap-2 text-xs text-gray-500 dark:text-gray-400"
+                {/* Bottom: title + description + areas */}
+                <div>
+                  <h3 className="text-3xl font-bold text-white mb-3">
+                    {pillar.category}
+                  </h3>
+                  <p
+                    className="text-sm leading-relaxed mb-6"
+                    style={{ color: "rgba(255,255,255,0.6)" }}
                   >
-                    <span
-                      className="mt-1.5 h-1 w-1 rounded-full shrink-0"
-                      style={{ backgroundColor: "#1dc962" }}
-                    />
-                    {bullet}
-                  </li>
-                ))}
-              </ul>
+                    {pillar.description}
+                  </p>
+                  <div
+                    className="pt-5"
+                    style={{ borderTop: "1px solid rgba(255,255,255,0.1)" }}
+                  >
+                    <ul className="space-y-2.5">
+                      {pillar.areas.map((area) => (
+                        <li
+                          key={area}
+                          className="flex items-center gap-2.5 text-sm"
+                          style={{ color: "rgba(255,255,255,0.8)" }}
+                        >
+                          <span
+                            className="h-1.5 w-1.5 rounded-full shrink-0"
+                            style={{ backgroundColor: "#1dc962" }}
+                          />
+                          {area}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           ))}
         </div>

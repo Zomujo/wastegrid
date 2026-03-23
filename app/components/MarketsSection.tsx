@@ -1,41 +1,47 @@
-import MaterialIcon from "./MaterialIcon";
+import Image from "next/image";
 
 const markets = [
   {
-    icon: "electric_bolt",
+    image: "/market-energy.jpg",
     title: "Energy & Infrastructure",
     description:
       "Power generation, transmission, and the infrastructure that makes industrial activity possible.",
+    colSpan: 2,
   },
   {
-    icon: "landslide",
+    image: "/market-mining.jpg",
     title: "Mining & Resource Processing",
     description:
       "Extraction, beneficiation, and transformation of mineral and metal resources.",
+    colSpan: 1,
   },
   {
-    icon: "grass",
+    image: "/market-agriculture.jpg",
     title: "Agriculture & Food Systems",
     description:
       "Inputs, processing, and logistics that support agricultural productivity at scale.",
+    colSpan: 1,
   },
   {
-    icon: "domain",
+    image: "/market-construction.jpg",
     title: "Construction & Urban Development",
     description:
       "Materials, chemicals, and systems that underpin built environments and infrastructure.",
+    colSpan: 2,
   },
   {
-    icon: "precision_manufacturing",
+    image: "/market-manufacturing.jpg",
     title: "Manufacturing & Industrial Production",
     description:
       "Chemical inputs, materials, and energy systems that keep production lines running.",
+    colSpan: 1,
   },
   {
-    icon: "local_shipping",
+    image: "/market-logistics.jpg",
     title: "Logistics & Supply Chains",
     description:
       "Connectivity, visibility, and efficiency across complex industrial supply networks.",
+    colSpan: 2,
   },
 ];
 
@@ -72,31 +78,44 @@ export default function MarketsSection() {
             </p>
           </div>
 
-          {/* Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px rounded-xl overflow-hidden"
-            style={{ background: "rgba(255,255,255,0.07)" }}
-          >
+          {/* Bento mosaic — 3 col grid, cards alternate between col-span-2 and col-span-1 */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {markets.map((market) => (
               <div
                 key={market.title}
-                className="group flex flex-col p-8 transition-colors duration-200"
-                style={{ background: "#112117" }}
+                className="group relative overflow-hidden rounded-xl"
+                style={{
+                  gridColumn: `span ${market.colSpan}`,
+                  height: "320px",
+                }}
               >
+                {/* Image */}
+                <Image
+                  src={market.image}
+                  alt={market.title}
+                  fill
+                  loading="lazy"
+                  quality={80}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                />
+                {/* Gradient overlay */}
                 <div
-                  className="flex h-11 w-11 items-center justify-center rounded-lg mb-6"
-                  style={{ backgroundColor: "rgba(29, 201, 98, 0.1)" }}
-                >
-                  <MaterialIcon
-                    icon={market.icon}
-                    className="text-[22px] text-primary"
-                  />
+                  className="absolute inset-0"
+                  style={{
+                    background:
+                      "linear-gradient(to top, rgba(17, 33, 23, 0.95) 0%, rgba(17, 33, 23, 0.4) 55%, rgba(17, 33, 23, 0.1) 100%)",
+                  }}
+                />
+                {/* Text */}
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-base font-bold text-white mb-2">
+                    {market.title}
+                  </h3>
+                  <p className="text-xs leading-relaxed" style={{ color: "#94a3b8" }}>
+                    {market.description}
+                  </p>
                 </div>
-                <h3 className="text-base font-bold text-white mb-3">
-                  {market.title}
-                </h3>
-                <p className="text-sm leading-relaxed" style={{ color: "#64748b" }}>
-                  {market.description}
-                </p>
               </div>
             ))}
           </div>
