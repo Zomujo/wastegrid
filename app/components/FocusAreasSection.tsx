@@ -1,31 +1,45 @@
 import Image from "next/image";
 
-const pillars = [
-  {
-    image: "/focus-primary-materials.jpg",
-    category: "Materials",
-    description:
-      "Sourcing, upgrading, and transforming both primary and secondary materials into industrial-grade inputs.",
-    areas: [
-      "Energy Materials",
-      "Industrial Chemicals",
-      "Primary Materials",
-      "Circular Materials",
-    ],
-  },
+const focusAreas = [
   {
     image: "/focus-energy-electrification.jpg",
-    category: "Energy",
-    description:
-      "Reliable, scalable energy systems — from generation and storage to industrial consumption and clean fuels.",
-    areas: ["Energy & Electrification", "Clean Fuels"],
+    title: "Energy & Electrification",
+    description: "Reliable, scalable energy systems for industrial and commercial operations.",
+  },
+  {
+    image: "/focus-energy-materials.jpg",
+    title: "Energy Materials",
+    description: "Materials that enable energy storage, electrification, and next-generation technologies.",
+  },
+  {
+    image: "/focus-industrial-chemicals.jpg",
+    title: "Industrial Chemicals",
+    description: "Chemical inputs that underpin production across key sectors.",
+  },
+  {
+    image: "/focus-primary-materials.jpg",
+    title: "Primary Materials",
+    description: "Upgrading natural resources into industrial-grade inputs.",
+  },
+  {
+    image: "/focus-circular-materials.jpg",
+    title: "Circular Materials",
+    description: "Recovering and reintegrating materials into industrial use.",
+  },
+  {
+    image: "/focus-clean-fuels.jpg",
+    title: "Clean Fuels",
+    description: "Low-carbon fuel systems for industrial applications.",
+  },
+  {
+    image: "/focus-agro-water.jpg",
+    title: "Agro & Water Systems",
+    description: "Systems supporting productivity, resilience, and resource security.",
   },
   {
     image: "/focus-digital-infrastructure.jpg",
-    category: "Industrial Systems",
-    description:
-      "Platforms and physical systems that enable industrial coordination, visibility, and scale.",
-    areas: ["Agro & Water Systems", "Digital Infrastructure"],
+    title: "Digital Infrastructure",
+    description: "Platforms that enable visibility, coordination, and scale.",
   },
 ];
 
@@ -53,80 +67,45 @@ export default function FocusAreasSection() {
           </p>
         </div>
 
-        {/* 3 Pillar Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {pillars.map((pillar) => (
+        {/* 8-card grid — 2 col mobile, 4 col desktop */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          {focusAreas.map((area) => (
             <div
-              key={pillar.category}
-              className="group relative overflow-hidden rounded-2xl"
-              style={{ minHeight: "520px" }}
+              key={area.title}
+              className="group relative overflow-hidden rounded-xl"
+              style={{ height: "360px" }}
             >
               {/* Background image */}
               <Image
-                src={pillar.image}
-                alt={pillar.category}
+                src={area.image}
+                alt={area.title}
                 fill
                 loading="lazy"
-                quality={85}
-                sizes="(max-width: 1024px) 100vw, 33vw"
+                quality={80}
+                sizes="(max-width: 1024px) 50vw, 25vw"
                 className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
               />
 
-              {/* Gradient overlay — dark at bottom, light at top */}
+              {/* Gradient overlay */}
               <div
                 className="absolute inset-0"
                 style={{
                   background:
-                    "linear-gradient(to bottom, rgba(17,33,23,0.25) 0%, rgba(17,33,23,0.55) 40%, rgba(17,33,23,0.97) 100%)",
+                    "linear-gradient(to bottom, rgba(17,33,23,0.15) 0%, rgba(17,33,23,0.55) 50%, rgba(17,33,23,0.97) 100%)",
                 }}
               />
 
               {/* Content */}
-              <div className="absolute inset-0 flex flex-col justify-between p-8">
-                {/* Top label */}
-                <span
-                  className="text-xs font-semibold tracking-[0.2em] uppercase self-start px-3 py-1 rounded-full"
-                  style={{
-                    color: "#1dc962",
-                    background: "rgba(29,201,98,0.12)",
-                    border: "1px solid rgba(29,201,98,0.25)",
-                  }}
+              <div className="absolute inset-0 flex flex-col justify-end p-5">
+                <h3 className="text-sm font-bold text-white mb-1.5 leading-tight">
+                  {area.title}
+                </h3>
+                <p
+                  className="text-xs leading-relaxed"
+                  style={{ color: "rgba(255,255,255,0.6)" }}
                 >
-                  {pillar.category}
-                </span>
-
-                {/* Bottom: title + description + areas */}
-                <div>
-                  <h3 className="text-3xl font-bold text-white mb-3">
-                    {pillar.category}
-                  </h3>
-                  <p
-                    className="text-sm leading-relaxed mb-6"
-                    style={{ color: "rgba(255,255,255,0.6)" }}
-                  >
-                    {pillar.description}
-                  </p>
-                  <div
-                    className="pt-5"
-                    style={{ borderTop: "1px solid rgba(255,255,255,0.1)" }}
-                  >
-                    <ul className="space-y-2.5">
-                      {pillar.areas.map((area) => (
-                        <li
-                          key={area}
-                          className="flex items-center gap-2.5 text-sm"
-                          style={{ color: "rgba(255,255,255,0.8)" }}
-                        >
-                          <span
-                            className="h-1.5 w-1.5 rounded-full shrink-0"
-                            style={{ backgroundColor: "#1dc962" }}
-                          />
-                          {area}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
+                  {area.description}
+                </p>
               </div>
             </div>
           ))}

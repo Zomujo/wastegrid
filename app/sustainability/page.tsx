@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar";
 import SustainabilityHero from "../components/SustainabilityHero";
 import SustainabilitySection from "../components/SustainabilitySection";
 import InnovationSection from "../components/InnovationSection";
-import JoinUsCTA from "../components/JoinUsCTA";
 
 export const metadata: Metadata = {
   title: "Sustainability",
@@ -19,7 +18,6 @@ export default function SustainabilityPage() {
         <SustainabilityHero />
         <SustainabilitySection />
         <InnovationSection />
-        <JoinUsCTA />
       </main>
     </div>
   );

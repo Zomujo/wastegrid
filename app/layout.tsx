@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
+import Footer from "./components/Footer";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -12,7 +13,7 @@ const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://www.wastegridafrica.com";
 const siteName = "Waste Grid";
 const defaultDescription =
-  "The Future of Waste in Africa is Circular. We are transforming waste into climate solutions and empowering communities across Africa.";
+  "WasteGrid is an industrial platform enabling Africa's industrial future — developing the foundational systems across materials, energy, and industrial infrastructure.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -134,6 +135,7 @@ export default function RootLayout({
         className={`${manrope.variable} font-display antialiased bg-background-light dark:bg-background-dark text-content-light dark:text-content-dark`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -74,6 +74,16 @@ export default function Navbar() {
         </Link>
         <Link
           className={`text-sm font-medium ${
+            isActive("/solar")
+              ? "text-primary-green"
+              : "hover:text-primary-green"
+          }`}
+          href="/solar"
+        >
+          Solar &amp; Green Transition
+        </Link>
+        <Link
+          className={`text-sm font-medium ${
             isActive("/contact")
               ? "text-primary-green"
               : "hover:text-primary-green"
@@ -154,6 +164,17 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               Sustainability
+            </Link>
+            <Link
+              className={`text-base font-medium ${
+                isActive("/solar")
+                  ? "text-primary-green"
+                  : "hover:text-primary-green"
+              }`}
+              href="/solar"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Solar &amp; Green Transition
             </Link>
             <Link
               className={`text-base font-medium ${

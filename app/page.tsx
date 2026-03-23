@@ -5,7 +5,6 @@ import FocusAreasSection from "./components/FocusAreasSection";
 import ApproachSection from "./components/ApproachSection";
 import WhatWeAreBuilding from "./components/WhatWeAreBuilding";
 import MarketsSection from "./components/MarketsSection";
-import JoinUsCTA from "./components/JoinUsCTA";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -23,7 +22,6 @@ export default function Home() {
         <ApproachSection />
         <WhatWeAreBuilding />
         <MarketsSection />
-        <JoinUsCTA />
       </main>
     </div>
   );
