@@ -13,6 +13,7 @@ export default function HeroSection() {
         muted
         loop
         playsInline
+        poster="/hero-poster.jpg"
         className="absolute inset-0 w-full h-full object-cover object-center"
       >
         <source src="/hero.mp4" type="video/mp4" />
@@ -22,7 +23,7 @@ export default function HeroSection() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(to right, rgba(17, 33, 23, 0.92) 0%, rgba(17, 33, 23, 0.75) 55%, rgba(17, 33, 23, 0.4) 100%)",
+            "linear-gradient(to right, rgba(17, 33, 23, 0.93) 0%, rgba(17, 33, 23, 0.93) 36%, rgba(17, 33, 23, 0.58) 54%, rgba(17, 33, 23, 0.22) 100%)",
         }}
       />
 
@@ -40,10 +41,15 @@ export default function HeroSection() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-[72px] leading-[1.04] mb-6">
-            Enabling Africa&apos;s
+          <h1 className="text-5xl font-bold tracking-tight sm:text-6xl lg:text-[72px] leading-[1.04] mb-6">
+            <span
+              className="text-white [text-shadow:0_1px_14px_rgba(0,0,0,0.42)]"
+            >
+              Enabling Africa&apos;s
+            </span>
             <br />
             <span
+              className="inline-block [filter:drop-shadow(0_1px_12px_rgba(0,0,0,0.38))]"
               style={{
                 background: "linear-gradient(90deg, #1dc962 0%, #4ade80 50%, #1dc962 100%)",
                 WebkitBackgroundClip: "text",
@@ -58,7 +64,7 @@ export default function HeroSection() {
           {/* Tagline */}
           <p
             className="text-lg font-medium mb-6 tracking-wide"
-            style={{ color: "#94a3b8" }}
+            style={{ color: "#cbd5e1" }}
           >
             Materials. Energy. Industrial Systems.
           </p>
@@ -66,7 +72,7 @@ export default function HeroSection() {
           {/* Description */}
           <p
             className="text-base leading-relaxed max-w-2xl mb-12"
-            style={{ color: "#64748b" }}
+            style={{ color: "#94a3b8" }}
           >
             WasteGrid is an industrial platform developing the foundational
             systems required for Africa&apos;s next phase of growth. We operate
@@ -87,11 +93,7 @@ export default function HeroSection() {
             </Link>
             <Link
               href="/about"
-              className="inline-flex items-center justify-center gap-2 rounded-lg border px-8 py-4 text-base font-medium transition-all hover:border-primary"
-              style={{
-                borderColor: "rgba(29, 201, 98, 0.25)",
-                color: "#e2e8f0",
-              }}
+              className="inline-flex items-center justify-center gap-2 rounded-lg border border-[rgba(29,201,98,0.35)] px-8 py-4 text-base font-medium text-[#e2e8f0] transition-all duration-200 hover:border-[#1dc962] hover:bg-[rgba(29,201,98,0.14)] hover:text-white hover:scale-[1.02]"
             >
               Our Approach
             </Link>
@@ -108,7 +110,7 @@ export default function HeroSection() {
                 <p className="text-4xl font-bold" style={{ color: "#1dc962" }}>
                   {stat.value}
                 </p>
-                <p className="text-sm mt-1" style={{ color: "#64748b" }}>
+                <p className="text-sm mt-1" style={{ color: "#94a3b8" }}>
                   {stat.label}
                 </p>
               </div>
