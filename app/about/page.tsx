@@ -6,7 +6,7 @@ import WhatWeAreBuilding from "../components/WhatWeAreBuilding";
 import PeopleSection from "../components/PeopleSection";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About Waste Grid",
   description:
     "WasteGrid is an industrial platform developing the foundational systems required for Africa's next phase of growth — across materials, energy, and industrial infrastructure.",
 };

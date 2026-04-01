@@ -30,9 +30,9 @@ export default function SolarHero() {
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         <ScrollReveal>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-white mb-6 leading-[1.05]">
-            Pay for Power Briefly.<br />
+            Solar &amp; Green Transition for Africa.<br />
             <span className="inline-block bg-clip-text text-transparent bg-linear-to-r from-brand-gold via-yellow-400 to-brand-gold bg-size-[200%_auto] animate-[shimmer_3s_linear_infinite]">
-              Own It for Decades.
+              Pay for Power Briefly. Own It for Decades.
             </span>
           </h1>
         </ScrollReveal>

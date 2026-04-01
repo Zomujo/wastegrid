@@ -92,10 +92,28 @@ export default function HeroSection() {
               <MaterialIcon icon="arrow_forward" className="text-[20px]" />
             </Link>
             <Link
-              href="/about"
+              href="/solar"
               className="inline-flex items-center justify-center gap-2 rounded-lg border border-[rgba(29,201,98,0.35)] px-8 py-4 text-base font-medium text-[#e2e8f0] transition-all duration-200 hover:border-[#1dc962] hover:bg-[rgba(29,201,98,0.14)] hover:text-white hover:scale-[1.02]"
             >
-              Our Approach
+              Solar &amp; Green Transition
+            </Link>
+          </div>
+
+          <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm" style={{ color: "#94a3b8" }}>
+            <span className="font-medium" style={{ color: "#cbd5e1" }}>
+              Popular pages:
+            </span>
+            <Link href="/platform" className="hover:text-white transition-colors">
+              Platform
+            </Link>
+            <Link href="/sustainability" className="hover:text-white transition-colors">
+              Sustainability
+            </Link>
+            <Link href="/solar" className="hover:text-white transition-colors">
+              Solar &amp; Green Transition
+            </Link>
+            <Link href="/contact" className="hover:text-white transition-colors">
+              Contact
             </Link>
           </div>
 

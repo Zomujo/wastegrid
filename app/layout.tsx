@@ -11,12 +11,13 @@ const manrope = Manrope({
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://www.wastegridafrica.com";
+const baseUrl = siteUrl.replace(/\/$/, "");
 const siteName = "Waste Grid";
 const defaultDescription =
   "WasteGrid is an industrial platform enabling Africa's industrial future — developing the foundational systems across materials, energy, and industrial infrastructure.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(baseUrl),
   title: {
     default: siteName,
     template: `%s | ${siteName}`,
@@ -87,22 +88,46 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebSite",
-      "@id": `${siteUrl}/#website`,
-      url: siteUrl,
+      "@id": `${baseUrl}/#website`,
+      url: baseUrl,
       name: siteName,
-      potentialAction: {
-        "@type": "SearchAction",
-        target: `${siteUrl}/search?q={search_term_string}`,
-        "query-input": "required name=search_term_string",
-      },
     },
     {
       "@type": "Organization",
-      "@id": `${siteUrl}/#organization`,
+      "@id": `${baseUrl}/#organization`,
       name: siteName,
-      url: siteUrl,
-      logo: `${siteUrl}/new_logo.png`,
-      sameAs: [],
+      url: baseUrl,
+      logo: `${baseUrl}/new_logo.png`,
+    },
+    {
+      "@type": "SiteNavigationElement",
+      name: "Home",
+      url: `${baseUrl}/`,
+    },
+    {
+      "@type": "SiteNavigationElement",
+      name: "About",
+      url: `${baseUrl}/about`,
+    },
+    {
+      "@type": "SiteNavigationElement",
+      name: "Platform",
+      url: `${baseUrl}/platform`,
+    },
+    {
+      "@type": "SiteNavigationElement",
+      name: "Sustainability",
+      url: `${baseUrl}/sustainability`,
+    },
+    {
+      "@type": "SiteNavigationElement",
+      name: "Solar & Green Transition",
+      url: `${baseUrl}/solar`,
+    },
+    {
+      "@type": "SiteNavigationElement",
+      name: "Contact",
+      url: `${baseUrl}/contact`,
     },
   ],
 };

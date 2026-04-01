@@ -5,7 +5,7 @@ import FocusAreasSection from "../components/FocusAreasSection";
 import WhatWeAreBuilding from "../components/WhatWeAreBuilding";
 
 export const metadata: Metadata = {
-  title: "Platform",
+  title: "Platform | Materials, Energy & Industrial Systems",
   description:
     "WasteGrid's integrated industrial platform spans 8 focus areas — from energy and materials to digital infrastructure — enabling Africa's next phase of industrial growth.",
 };

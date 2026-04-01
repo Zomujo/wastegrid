@@ -5,7 +5,7 @@ import SustainabilitySection from "../components/SustainabilitySection";
 import InnovationSection from "../components/InnovationSection";
 
 export const metadata: Metadata = {
-  title: "Sustainability",
+  title: "Sustainability at Waste Grid",
   description:
     "Sustainability is embedded in how WasteGrid designs and operates its systems — through circular material flows, low-carbon energy, efficient supply chains, and responsible processing.",
 };

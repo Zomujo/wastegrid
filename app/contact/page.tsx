@@ -7,7 +7,7 @@ import ContactForm from "../components/ContactForm";
 import ContactCTA from "../components/ContactCTA";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contact Waste Grid",
   description:
     "Get in touch with WasteGrid. Reach out to explore partnerships, investment opportunities, or collaboration across our industrial platform.",
 };
