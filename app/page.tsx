@@ -7,9 +7,18 @@ import WhatWeAreBuilding from "./components/WhatWeAreBuilding";
 import MarketsSection from "./components/MarketsSection";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: {
+    absolute: "WasteGrid - Enabling an Industrial Africa",
+  },
   description:
-    "WasteGrid is an industrial platform developing the foundational systems required for Africa's next phase of growth — across materials, energy, and industrial infrastructure.",
+    "WasteGrid is enabling an industrial Africa by developing foundational systems across materials, energy, and industrial infrastructure.",
+  openGraph: {
+    title: "WasteGrid - Enabling an Industrial Africa",
+    description:
+      "WasteGrid is enabling an industrial Africa by developing foundational systems across materials, energy, and industrial infrastructure.",
+    url: "/",
+    type: "website",
+  },
 };
 
 export default function Home() {

@@ -45,7 +45,7 @@ export default function HeroSection() {
             <span
               className="text-white [text-shadow:0_1px_14px_rgba(0,0,0,0.42)]"
             >
-              Enabling Africa&apos;s
+              Enabling an Industrial
             </span>
             <br />
             <span
@@ -57,7 +57,7 @@ export default function HeroSection() {
                 backgroundClip: "text",
               }}
             >
-              Industrial Future.
+              Africa.
             </span>
           </h1>
 
